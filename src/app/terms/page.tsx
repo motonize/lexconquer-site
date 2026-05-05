@@ -64,8 +64,8 @@ export default function TermsPage() {
           <li>Notifying us if you suspect your account has been accessed without authorization</li>
         </ul>
         <p>
-          You may delete your account at any time from <strong>Profile → Settings → Delete
-          Account</strong>. See our <Link href="/support">Support page</Link> for details.
+          You may delete your account at any time from <strong>Profile Settings → Delete
+          Profile</strong>. See our <Link href="/support">Support page</Link> for details.
         </p>
 
         <h2>4. In-app purchases</h2>
@@ -132,7 +132,7 @@ export default function TermsPage() {
           interstitial ads served by <strong>Google AdMob</strong> during normal play. All users
           (free and paid) may also be offered <strong>opt-in rewarded video ads</strong> in
           exchange for Coins; this offer is enabled by default and can be disabled in{" "}
-          <strong>Profile Settings → Rewarded Ads</strong>. Paid users with rewarded ads
+          <strong>Profile Settings → Bonus Coin Offers</strong>. Paid users with this setting
           disabled see no ads at all.
         </p>
 
@@ -143,9 +143,9 @@ export default function TermsPage() {
           The App lets you create and share content with other players, including:
         </p>
         <ul>
-          <li>Display name and avatar</li>
-          <li>Faction (group) names and descriptions</li>
-          <li>Chat messages — in-game, group/faction, and friend-to-friend</li>
+          <li>Display name</li>
+          <li>Group names and descriptions</li>
+          <li>Chat messages — in-game, group, and friend-to-friend</li>
           <li>Tournament names</li>
         </ul>
 
@@ -181,7 +181,7 @@ export default function TermsPage() {
 
         <h3>6.5 License you grant us in your content</h3>
         <p>
-          For any content you post or share through the App (display names, faction names, chat
+          For any content you post or share through the App (display names, group names, chat
           messages, etc.), you grant Motonize a non-exclusive, worldwide, royalty-free license
           to host, store, reproduce, modify (e.g., for moderation), display, and distribute that
           content as needed to operate the App and provide the service to you and other users.

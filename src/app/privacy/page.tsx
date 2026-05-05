@@ -40,13 +40,14 @@ export default function PrivacyPage() {
         <h3>1.1 Account information (you provide via sign-in)</h3>
         <p>
           To create an account, we use third-party sign-in providers — currently{" "}
-          <strong>Google Sign-In</strong> and <strong>Sign in with Apple</strong>. When you sign
-          in, we receive:
+          <strong>Google Sign-In</strong>, <strong>Sign in with Apple</strong>, and (on iOS) Apple{" "}
+          <strong>Game Center</strong>. When you sign in, we receive:
         </p>
         <ul>
           <li>Your email address (Apple may provide a private relay address that forwards to your real one)</li>
           <li>Your name as registered with the provider (optional with Apple)</li>
           <li>A unique provider account identifier</li>
+          <li>For Game Center: your Game Center player ID and alias (display name)</li>
         </ul>
         <p>
           We do not see, store, or have access to your password for those accounts. We use the
@@ -59,16 +60,17 @@ export default function PrivacyPage() {
         </p>
         <ul>
           <li>
-            <strong>Profile:</strong> display name (chosen by you), avatar, settings preferences
-            (chat on/off, rewarded-ad offers on/off, theme, sound), tier (free or paid)
+            <strong>Profile:</strong> display name (chosen by you), rank theme, settings
+            preferences (chat on/off, bonus coin offers on/off, music on/off, badge preferences),
+            tier (free or paid)
           </li>
           <li>
             <strong>Game data:</strong> match records (players, scores, words played, tiles
-            claimed, base captures), tournament participation, group/faction memberships,
-            performance ranks (RP), achievements
+            claimed, base captures), tournament participation, group memberships, performance
+            ranks (RP), achievements
           </li>
           <li>
-            <strong>Social graph:</strong> friends list, friend requests, faction membership
+            <strong>Social graph:</strong> friends list, friend requests, group membership
           </li>
           <li>
             <strong>Chat content:</strong> messages you send and receive in in-game, group, and
@@ -116,8 +118,8 @@ export default function PrivacyPage() {
           <li>
             <strong>Opt-in rewarded video ads:</strong> users on any tier (free or paid) may
             choose to watch a rewarded video ad to earn in-game coins. This is voluntary and
-            controlled by a setting in <strong>Profile Settings → Rewarded Ads</strong>. Paid
-            users with rewarded ads disabled see no ads at all.
+            controlled by a setting in <strong>Profile Settings → Bonus Coin Offers</strong>.
+            Paid users with this setting disabled see no ads at all.
           </li>
         </ul>
         <p>
@@ -173,7 +175,7 @@ export default function PrivacyPage() {
           <li>Create and maintain your account</li>
           <li>Operate the game — matchmaking, gameplay, scoring, ranking, achievements</li>
           <li>Deliver push notifications you have opted into</li>
-          <li>Show your display name, rank, and game results to opponents and to people in your factions or friend list</li>
+          <li>Show your display name, rank, and game results to opponents and to people in your groups or friend list</li>
           <li>Process and verify in-app purchases and grant entitlements</li>
           <li>Show ads (free tier) and offer optional rewarded video ads to users who have not disabled them</li>
           <li>Detect and prevent cheating, harassment, and other abuse</li>
@@ -192,8 +194,8 @@ export default function PrivacyPage() {
         <p>
           Lex Conquer is a multiplayer game. Other players will see information necessary for
           gameplay — your display name, avatar, current rank, match history within games you
-          share, and chat messages you send (when chat is enabled). Players in your factions or
-          friend list also see your faction memberships and online status.
+          share, and chat messages you send (when chat is enabled). Players in your groups or
+          friend list also see your group memberships and online status.
         </p>
 
         <h3>3.2 With service providers</h3>
@@ -257,23 +259,23 @@ export default function PrivacyPage() {
         </p>
         <ul>
           <li>
-            <strong>Disable chat</strong> — when off, you cannot send messages and you do not
+            <strong>Game Chat toggle</strong> — when off, you cannot send messages and you do not
             see messages from others. Chat content from you is no longer collected.
           </li>
           <li>
-            <strong>Disable rewarded ad offers</strong> — when off, the App does not present
+            <strong>Bonus Coin Offers toggle</strong> — when off, the App does not present
             opportunities to watch rewarded video ads for coins. Paid users with this off see no
             ads at all.
           </li>
           <li>
-            <strong>Manage your display name and avatar</strong>
+            <strong>Manage your display name</strong>
           </li>
         </ul>
 
         <h3>4.2 Account deletion</h3>
         <p>
-          You can delete your account from inside the App at any time:{" "}
-          <strong>Profile → Settings → Delete Account</strong>. Deletion permanently removes
+          You can delete your account from inside the App at any time via{" "}
+          <strong>Profile Settings → Delete Profile</strong>. Deletion permanently removes
           your account, profile, game history, friend graph, and personal data from our systems
           within a reasonable period. Some information may persist briefly in encrypted backups
           and is purged on the standard backup-rotation schedule. Aggregate analytics that
