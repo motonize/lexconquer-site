@@ -216,7 +216,7 @@ export default function SupportPage() {
         <h2>About</h2>
         <p>
           Lex Conquer is published by <strong>Motonize LLC</strong>, a games studio based in
-          Brooklyn, New York. Learn more about the studio at{" "}
+          New York. Learn more about the studio at{" "}
           <a href="https://motonize.com">motonize.com</a>.
         </p>
         <p>
