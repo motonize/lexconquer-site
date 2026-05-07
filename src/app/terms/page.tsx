@@ -79,20 +79,20 @@ export default function TermsPage() {
           <strong>one-time purchase</strong>, not a subscription, and does not auto-renew.
         </p>
 
-        <h3>4.2 Virtual currency (Coins)</h3>
+        <h3>4.2 Virtual currency (Lex Coins)</h3>
         <p>
-          The App may include a virtual currency called <strong>Coins</strong> used inside the
-          game. Coins can be obtained by:
+          The App includes a virtual currency called <strong>Lex Coins</strong> used inside the
+          game. Lex Coins can be obtained by:
         </p>
         <ul>
-          <li>Purchasing coin packs through the App Store or Google Play (one-time consumable purchases)</li>
+          <li>Purchasing Lex Coin packs through the App Store or Google Play (one-time consumable purchases — Handful, Pouch, Chest, Vault, or Treasury sizes)</li>
           <li>Watching opt-in rewarded video ads (when this option is enabled in Profile Settings)</li>
           <li>Other in-game means we may make available from time to time</li>
         </ul>
         <p>
-          <strong>Coins have no monetary value and are not redeemable for cash or any other
-          form of legal tender.</strong> Coins are non-transferable between accounts and are
-          forfeited upon account deletion or termination. Unused Coins do not accrue interest
+          <strong>Lex Coins have no monetary value and are not redeemable for cash or any other
+          form of legal tender.</strong> Lex Coins are non-transferable between accounts and are
+          forfeited upon account deletion or termination. Unused Lex Coins do not accrue interest
           and have no expiration unless your account is closed.
         </p>
 

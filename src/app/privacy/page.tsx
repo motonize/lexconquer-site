@@ -90,8 +90,8 @@ export default function PrivacyPage() {
 
         <h3>1.4 Purchase information</h3>
         <p>
-          When you make an in-app purchase (such as the Conqueror lifetime upgrade or coin
-          packs), the transaction is processed by <strong>Apple App Store</strong> or{" "}
+          When you make an in-app purchase (such as the Conqueror lifetime upgrade or Lex
+          Coin packs), the transaction is processed by <strong>Apple App Store</strong> or{" "}
           <strong>Google Play</strong>. We use <strong>RevenueCat</strong> as our subscription
           and entitlement service to verify and grant entitlements. We receive:
         </p>
@@ -117,9 +117,9 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>Opt-in rewarded video ads:</strong> users on any tier (free or paid) may
-            choose to watch a rewarded video ad to earn in-game coins. This is voluntary and
-            controlled by a setting in <strong>Profile Settings → Bonus Coin Offers</strong>.
-            Paid users with this setting disabled see no ads at all.
+            choose to watch a rewarded video ad to earn in-game Lex Coins. This is voluntary
+            and controlled by a setting in <strong>Profile Settings → Advertisements → Bonus
+            Coin Offers</strong>. Paid users with this setting disabled see no ads at all.
           </li>
         </ul>
         <p>
