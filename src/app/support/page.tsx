@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Support",
-  description: "Help, FAQs, account management, and contact for the Lex Conquer mobile app.",
+  description: "Help, FAQs, profile management, and contact for the Lex Conquer mobile app.",
 };
 
 export default function SupportPage() {
@@ -19,7 +19,7 @@ export default function SupportPage() {
       <main className="max-w-3xl mx-auto px-6 sm:px-10 py-16 sm:py-20 prose-legal">
         <h1 className="font-display text-4xl font-semibold mb-2">Support</h1>
         <p className="text-[var(--muted)] text-base mb-8">
-          Help, account management, and contact information for Lex Conquer players.
+          Help, profile management, and contact information for Lex Conquer players.
         </p>
         <div className="divider-gold mb-10" />
 
@@ -37,62 +37,68 @@ export default function SupportPage() {
           <li>Your in-game display name</li>
           <li>The email address linked to your sign-in (Google or Apple)</li>
           <li>Your device (iPhone 15, Pixel 8, etc.) and OS version</li>
-          <li>App version (find it in <strong>Profile → Settings → About</strong>)</li>
+          <li>App version (open <strong>Profile Settings</strong> from the lobby and scroll to the bottom — the version is shown above the publisher line)</li>
           <li>A clear description of the issue and steps to reproduce, if applicable</li>
         </ul>
 
-        <h2>Account management</h2>
+        <h2>Profile management</h2>
 
-        <h3>Delete your account</h3>
+        <h3>Delete your profile</h3>
         <p>
-          You can delete your Lex Conquer account from inside the App at any time:
+          You can delete your Lex Conquer profile from inside the App at any time:
         </p>
         <ul>
           <li>Open <strong>Lex Conquer</strong> on your device</li>
-          <li>Go to <strong>Profile → Settings</strong></li>
-          <li>Scroll to the bottom and tap <strong>Delete Account</strong></li>
-          <li>Confirm. Your account, profile, game history, friend graph, and personal data are permanently removed from our systems</li>
+          <li>Tap your <strong>display name</strong> (or the rank icon in the top-right corner) in the lobby to open <strong>Profile Settings</strong></li>
+          <li>Scroll to the bottom and tap <strong>Delete Profile</strong></li>
+          <li>Confirm. Your profile, game history, friend graph, and personal data are permanently removed from our systems</li>
         </ul>
         <p>
-          If you cannot access the App to delete your account (lost phone, account locked,
+          If you cannot access the App to delete your profile (lost phone, profile locked,
           etc.), email <a href="mailto:info@lexconquer.com">info@lexconquer.com</a> from the
           address linked to your sign-in and we will process the deletion within 7 business
           days.
         </p>
 
-        <h3>Disable chat</h3>
+        <h3>Set chat preferences for new games</h3>
         <p>
-          You can fully disable chat at any time:
+          You can choose whether new games you join start with chat on or off:
         </p>
         <ul>
-          <li>Go to <strong>Profile → Settings</strong></li>
-          <li>Toggle <strong>Chat</strong> off</li>
+          <li>Open <strong>Profile Settings</strong> from the lobby</li>
+          <li>Expand the <strong>Game Settings</strong> section</li>
+          <li>Toggle <strong>Game Chat</strong> off to make new games start with chat muted</li>
         </ul>
         <p>
-          When chat is disabled, you cannot send messages and you do not see messages from
-          other players in any context — in-game, group/faction, or friend-to-friend. You can
-          re-enable chat at any time.
+          This setting controls the default for newly created or joined games. Each individual
+          game also has its own per-game chat toggle so you can mute or unmute conversations
+          on a per-match basis.
         </p>
 
-        <h3>Disable rewarded ad offers</h3>
+        <h3>Disable bonus coin offers</h3>
         <p>
-          Lex Conquer may offer you the opportunity to watch a short video ad in exchange for
-          in-game Coins. This is opt-in and can be disabled at any time:
+          After winning a match, Lex Conquer may show an optional prompt to watch a short
+          video ad in exchange for bonus Coins. This is opt-in and can be disabled at any time:
         </p>
         <ul>
-          <li>Go to <strong>Profile → Settings</strong></li>
-          <li>Toggle <strong>Rewarded Ads</strong> off</li>
+          <li>Open <strong>Profile Settings</strong> from the lobby</li>
+          <li>Expand the <strong>Advertisements</strong> section</li>
+          <li>Toggle <strong>Bonus Coin Offers</strong> off</li>
         </ul>
         <p>
-          Paid (Conqueror) users with rewarded ads disabled see no ads at all. Free-tier users
-          will continue to see standard banner and interstitial ads even with rewarded ads
-          disabled.
+          With offers disabled, the post-win prompt no longer appears. You can still tap the
+          coin pill in the lobby anytime to watch a rewarded video manually.
+        </p>
+        <p>
+          Conqueror-tier players see no banner or interstitial ads at all. Free-tier players
+          continue to see standard banner ads regardless of the bonus-offer setting.
         </p>
 
-        <h3>Change your display name or avatar</h3>
+        <h3>Change your display name, rank theme, or background</h3>
         <p>
-          Edit your display name and avatar in <strong>Profile</strong> from the home screen.
-          Display names must follow the content rules in our{" "}
+          Edit your display name in <strong>Profile Settings</strong> from the lobby. Change
+          your rank theme and lobby background in the <strong>Armory</strong> (tap the Armory
+          button on the lobby home screen). Display names must follow the content rules in our{" "}
           <Link href="/terms">Terms of Service</Link>.
         </p>
 
@@ -114,26 +120,27 @@ export default function SupportPage() {
           rewarded-ads opt-out). Conqueror is a one-time purchase, not a subscription.
         </p>
 
-        <h3>How do I get Coins?</h3>
-        <p>You can obtain Coins by:</p>
+        <h3>How do I get Lex Coins?</h3>
+        <p>You can obtain Lex Coins by:</p>
         <ul>
-          <li>Purchasing coin packs through the App Store or Google Play</li>
-          <li>Watching opt-in rewarded video ads (available when Rewarded Ads are enabled in Profile Settings)</li>
+          <li>Purchasing coin packs (Handful, Pouch, Chest, Vault, or Treasury) through the App Store or Google Play</li>
+          <li>Tapping the coin pill in the lobby and watching an opt-in rewarded video ad</li>
+          <li>Winning matches — coins are awarded based on score and game mode</li>
           <li>Other in-game activities we may offer from time to time</li>
         </ul>
         <p>
-          Coins have no monetary value, are non-transferable, and are not redeemable for cash.
+          Lex Coins have no monetary value, are non-transferable, and are not redeemable for cash.
         </p>
 
-        <h3>I purchased Conqueror but don&apos;t see the features.</h3>
+        <h3>I purchased Conqueror or Lex Coins but don&apos;t see them.</h3>
         <p>
           Try these steps in order:
         </p>
         <ul>
           <li>Force-quit and reopen the App</li>
-          <li>Go to <strong>Profile → Settings → Restore Purchases</strong> (Conqueror entitlement is verified through RevenueCat and should re-appear)</li>
+          <li>Open <strong>Profile Settings → Support & Legal → Restore Purchases</strong>. This forces the App Store and our servers to re-sync — the Conqueror entitlement re-applies, and any unprocessed coin-pack webhook events are replayed. Coins typically arrive within a few seconds after the restore completes.</li>
           <li>Confirm the purchase succeeded in your <strong>App Store account → Purchase History</strong> or <strong>Google Play → Order History</strong></li>
-          <li>If still missing, email <a href="mailto:info@lexconquer.com">info@lexconquer.com</a> with your transaction ID and we will investigate</li>
+          <li>If still missing, email <a href="mailto:info@lexconquer.com">info@lexconquer.com</a> with your transaction ID and we will investigate and credit you manually if needed</li>
         </ul>
 
         <h3>How do I request a refund?</h3>
@@ -173,9 +180,8 @@ export default function SupportPage() {
         <p>
           When public matchmaking can&apos;t find enough humans within a reasonable wait time,
           empty slots may be filled by bots (Lex Jr., Lex, or Lex Pro). To play strictly
-          against humans, create a private match in your <strong>faction</strong> and invite
-          specific friends, or wait longer in public matchmaking. Hosts can also lock a match
-          to <strong>Humans Only</strong> when creating it.
+          against humans, create a private match inside one of your <strong>Groups</strong>{" "}
+          and invite specific friends, or wait longer in public matchmaking.
         </p>
 
         <h3>What&apos;s RP and how do I rank up?</h3>
@@ -194,12 +200,14 @@ export default function SupportPage() {
           family-sharing rules of the platform.
         </p>
 
-        <h3>I lost progress / my account looks empty.</h3>
+        <h3>I lost progress / my profile looks empty.</h3>
         <p>
-          Most likely you&apos;re signed into a different account than expected. Check{" "}
-          <strong>Profile → Settings → Account</strong> to see which sign-in is active. If you
-          previously used Google but the App is now signed in with Apple (or vice versa),
-          those are separate accounts. Sign out and back in with the original provider.
+          Most likely you&apos;re signed into a different account than expected. Open{" "}
+          <strong>Profile Settings</strong> and scroll to the <strong>Account Connection</strong>{" "}
+          section near the bottom to see which sign-ins (Apple, Google, Game Center) are linked
+          to the current profile. If you previously used Google but the App is now signed in
+          with Apple (or vice versa), those are separate profiles. Log out and sign back in
+          with the original provider.
         </p>
 
         <h3>Push notifications aren&apos;t arriving.</h3>
@@ -208,7 +216,7 @@ export default function SupportPage() {
         </p>
         <ul>
           <li>Notification permission is granted in your device&apos;s system settings</li>
-          <li>Notifications are enabled in <strong>Profile → Settings → Notifications</strong></li>
+          <li>Open <strong>Profile Settings → Notification Settings</strong> and confirm <strong>Push Notifications</strong> is on</li>
           <li>Per-game mute is off (some lobbies and games can be muted individually — look for the bell icon)</li>
           <li>Your device is not in Do Not Disturb / Focus mode</li>
         </ul>
