@@ -117,9 +117,11 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>Opt-in rewarded video ads:</strong> users on any tier (free or paid) may
-            choose to watch a rewarded video ad to earn in-game Lex Coins. This is voluntary
-            and controlled by a setting in <strong>Profile Settings → Advertisements → Bonus
-            Coin Offers</strong>. Paid users with this setting disabled see no ads at all.
+            choose to watch a rewarded video ad to earn in-game Lex Coins. Free-tier users
+            cannot disable rewarded ad offers. <strong>Conqueror-tier (paid) users</strong>{" "}
+            may turn off all rewarded ad offers via <strong>Profile Settings → Advertisements
+            → Show Rewarded Ad Offers</strong>, in which case the App displays no
+            advertisements of any kind during normal use.
           </li>
         </ul>
         <p>
@@ -263,9 +265,10 @@ export default function PrivacyPage() {
             see messages from others. Chat content from you is no longer collected.
           </li>
           <li>
-            <strong>Bonus Coin Offers toggle</strong> — when off, the App does not present
-            opportunities to watch rewarded video ads for coins. Paid users with this off see no
-            ads at all.
+            <strong>Show Rewarded Ad Offers toggle</strong> (Conqueror tier only) — when off,
+            the App does not present opportunities to watch rewarded video ads for coins.
+            Free-tier players cannot disable this; ad offers are always available on the free
+            tier. When a Conqueror user turns it off, the App displays no advertisements at all.
           </li>
           <li>
             <strong>Manage your display name</strong>

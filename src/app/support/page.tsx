@@ -75,23 +75,26 @@ export default function SupportPage() {
           on a per-match basis.
         </p>
 
-        <h3>Disable bonus coin offers</h3>
+        <h3>Disable rewarded ad offers (Conqueror tier)</h3>
         <p>
-          After winning a match, Lex Conquer may show an optional prompt to watch a short
-          video ad in exchange for bonus Coins. This is opt-in and can be disabled at any time:
+          Conqueror-tier players can fully disable rewarded ad offers — the post-win
+          double-coins prompt and the lobby coin pill&apos;s &ldquo;Watch Video&rdquo; option
+          — for a completely ad-free experience:
         </p>
         <ul>
           <li>Open <strong>Profile Settings</strong> from the lobby</li>
           <li>Expand the <strong>Advertisements</strong> section</li>
-          <li>Toggle <strong>Bonus Coin Offers</strong> off</li>
+          <li>Toggle <strong>Show Rewarded Ad Offers</strong> off</li>
         </ul>
         <p>
-          With offers disabled, the post-win prompt no longer appears. You can still tap the
-          coin pill in the lobby anytime to watch a rewarded video manually.
+          With offers disabled, the post-win prompt no longer appears and tapping the lobby
+          coin pill shows your balance and a direct link to buy coin packs (no ads).
         </p>
         <p>
-          Conqueror-tier players see no banner or interstitial ads at all. Free-tier players
-          continue to see standard banner ads regardless of the bonus-offer setting.
+          Conqueror-tier players also automatically see no banner or interstitial ads. The
+          rewarded-ad toggle is the additional &ldquo;completely ad-free&rdquo; layer on top
+          of that. Free-tier players cannot disable any ads; the toggle is shown but locked
+          in Profile Settings.
         </p>
 
         <h3>Change your display name, rank theme, or background</h3>

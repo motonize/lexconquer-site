@@ -129,11 +129,13 @@ export default function TermsPage() {
         <h2>5. Free tier and ads</h2>
         <p>
           Lex Conquer is free to download and play. Users on the free tier see banner and
-          interstitial ads served by <strong>Google AdMob</strong> during normal play. All users
-          (free and paid) may also be offered <strong>opt-in rewarded video ads</strong> in
-          exchange for Coins; this offer is enabled by default and can be disabled in{" "}
-          <strong>Profile Settings → Bonus Coin Offers</strong>. Paid users with this setting
-          disabled see no ads at all.
+          interstitial ads served by <strong>Google AdMob</strong> during normal play and may
+          also encounter opt-in rewarded video ads in exchange for Coins. Free-tier users
+          cannot fully disable ads. <strong>Conqueror-tier (paid) users</strong> see no banner
+          or interstitial ads, and may additionally turn off all rewarded ad offers via{" "}
+          <strong>Profile Settings → Advertisements → Show Rewarded Ad Offers</strong>. When
+          a Conqueror user disables this setting, the App presents no advertisements of any
+          kind during normal use.
         </p>
 
         <h2>6. User content and conduct</h2>
