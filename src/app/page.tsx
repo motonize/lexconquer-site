@@ -66,25 +66,27 @@ export default function Home() {
 
       {/* Hero */}
       <section className="bg-glow relative overflow-hidden">
-        {/* Mascots — Mr Lex left, Ms Lex right, saluting (lg+ only) */}
+        {/* Mascots — Mr Lex left, Ms Lex right, saluting (lg+ only).
+            Sized by HEIGHT (not width) so both characters appear at the same
+            visual height despite their PNG canvases having different aspect ratios. */}
         <div className="hidden lg:block absolute inset-x-0 bottom-0 pointer-events-none">
           <div className="max-w-7xl mx-auto px-2 xl:px-6 flex items-end justify-between">
             <Image
               src="/mascot/mr-lex-salute.png"
               alt=""
               aria-hidden="true"
-              width={500}
-              height={750}
-              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              width={1018}
+              height={1545}
+              className="h-[340px] xl:h-[440px] w-auto select-none drop-shadow-2xl"
               priority
             />
             <Image
               src="/mascot/ms-lex-salute.png"
               alt=""
               aria-hidden="true"
-              width={500}
-              height={750}
-              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              width={924}
+              height={1702}
+              className="h-[340px] xl:h-[440px] w-auto select-none drop-shadow-2xl"
               priority
             />
           </div>
@@ -210,29 +212,31 @@ export default function Home() {
 
       {/* Bottom CTA */}
       <section className="border-t border-[var(--border)] bg-glow relative overflow-hidden">
-        {/* Mascots — sword-fighting stance, ready for battle (lg+ only) */}
+        {/* Mascots — sword-fighting stance, ready for battle (lg+ only).
+            Same height-based sizing as hero. Slightly smaller than hero mascots so
+            they fit the shorter section without clipping. */}
         <div className="hidden lg:block absolute inset-x-0 bottom-0 pointer-events-none">
           <div className="max-w-7xl mx-auto px-2 xl:px-6 flex items-end justify-between">
             <Image
               src="/mascot/mr-lex-sword-fighting.png"
               alt=""
               aria-hidden="true"
-              width={500}
-              height={750}
-              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              width={980}
+              height={1605}
+              className="h-[280px] xl:h-[340px] w-auto select-none drop-shadow-2xl"
             />
             <Image
               src="/mascot/ms-lex-sword-fighting.png"
               alt=""
               aria-hidden="true"
-              width={500}
-              height={750}
-              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              width={932}
+              height={1688}
+              className="h-[280px] xl:h-[340px] w-auto select-none drop-shadow-2xl"
             />
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-20 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-20 lg:py-28 xl:py-32 text-center relative z-10">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
             Ready to conquer?
           </h2>
@@ -259,6 +263,19 @@ export default function Home() {
             </a>
           </div>
           <div className="flex items-center gap-6">
+            <a
+              href="https://instagram.com/lexconquer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Lex Conquer on Instagram"
+              className="hover:text-[var(--gold-bright)] transition-colors"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
             <Link href="/privacy" className="hover:text-[var(--gold-bright)] transition-colors">
               Privacy
             </Link>
