@@ -19,23 +19,50 @@ const features = [
   { label: "Platforms", value: "iOS · Android" },
 ];
 
-function StoreBadge({ kind, available = false }: { kind: "apple" | "google"; available?: boolean }) {
+// Live App Store URL — used by the iOS StoreBadge to make it a real clickable link.
+// Update if/when the App Store ID changes.
+const APP_STORE_URL = "https://apps.apple.com/us/app/lex-conquer/id6766434957";
+
+function StoreBadge({ kind, href }: { kind: "apple" | "google"; href?: string }) {
   const isApple = kind === "apple";
+  const available = !!href;
+
+  const icon = isApple ? (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.05 12.04c-.03-3.05 2.49-4.51 2.6-4.59-1.42-2.07-3.62-2.36-4.4-2.39-1.87-.19-3.65 1.1-4.6 1.1-.95 0-2.42-1.07-3.97-1.04-2.04.03-3.92 1.19-4.97 3.01-2.12 3.67-.54 9.1 1.52 12.07 1.01 1.46 2.21 3.09 3.79 3.03 1.52-.06 2.1-.99 3.94-.99s2.36.99 3.97.96c1.64-.03 2.68-1.48 3.69-2.94.86-1.24 1.55-2.6 2.04-4.06-2.51-.95-3.62-3.66-3.61-3.16zM14.13 3.7c.83-1.01 1.39-2.41 1.24-3.81-1.2.05-2.65.8-3.51 1.81-.77.89-1.45 2.32-1.27 3.69 1.34.1 2.71-.68 3.54-1.69z"/>
+    </svg>
+  ) : (
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M3.5 2.5v19l11-9.5-11-9.5zm14.4 5.4l-3-1.7L13 8l1.9 1.7 3-1.8zm-3 4.6l3-1.7-3-1.8L13 11l1.9 1.5zM3.7 22.4l11.2-9.7L17 14l-13.3 8.4z"/>
+    </svg>
+  );
+
+  const label = (
+    <div className="store-badge-label">
+      <span className="small">{available ? "Available now" : "Coming soon"}</span>
+      <span className="large">{isApple ? "App Store" : "Google Play"}</span>
+    </div>
+  );
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="store-badge"
+        aria-label={`Download Lex Conquer on the ${isApple ? "App Store" : "Google Play"}`}
+      >
+        {icon}
+        {label}
+      </a>
+    );
+  }
+
   return (
-    <div className={`store-badge ${available ? "" : "opacity-60 cursor-not-allowed"}`} aria-disabled={!available}>
-      {isApple ? (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M17.05 12.04c-.03-3.05 2.49-4.51 2.6-4.59-1.42-2.07-3.62-2.36-4.4-2.39-1.87-.19-3.65 1.1-4.6 1.1-.95 0-2.42-1.07-3.97-1.04-2.04.03-3.92 1.19-4.97 3.01-2.12 3.67-.54 9.1 1.52 12.07 1.01 1.46 2.21 3.09 3.79 3.03 1.52-.06 2.1-.99 3.94-.99s2.36.99 3.97.96c1.64-.03 2.68-1.48 3.69-2.94.86-1.24 1.55-2.6 2.04-4.06-2.51-.95-3.62-3.66-3.61-3.16zM14.13 3.7c.83-1.01 1.39-2.41 1.24-3.81-1.2.05-2.65.8-3.51 1.81-.77.89-1.45 2.32-1.27 3.69 1.34.1 2.71-.68 3.54-1.69z"/>
-        </svg>
-      ) : (
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M3.5 2.5v19l11-9.5-11-9.5zm14.4 5.4l-3-1.7L13 8l1.9 1.7 3-1.8zm-3 4.6l3-1.7-3-1.8L13 11l1.9 1.5zM3.7 22.4l11.2-9.7L17 14l-13.3 8.4z"/>
-        </svg>
-      )}
-      <div className="store-badge-label">
-        <span className="small">{available ? (isApple ? "Download on the" : "Get it on") : "Coming soon"}</span>
-        <span className="large">{isApple ? "App Store" : "Google Play"}</span>
-      </div>
+    <div className="store-badge opacity-60 cursor-not-allowed" aria-disabled="true">
+      {icon}
+      {label}
     </div>
   );
 }
@@ -119,11 +146,11 @@ export default function Home() {
           </p>
 
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <StoreBadge kind="apple" />
+            <StoreBadge kind="apple" href={APP_STORE_URL} />
             <StoreBadge kind="google" />
           </div>
           <p className="mt-4 text-xs text-[var(--muted)]/70 uppercase tracking-widest">
-            Launching 2026
+            Now on iOS · Android coming soon
           </p>
         </div>
       </section>
@@ -241,10 +268,10 @@ export default function Home() {
             Ready to conquer?
           </h2>
           <p className="text-[var(--muted)] mb-10 max-w-xl mx-auto">
-            Lex Conquer launches in 2026 on iOS and Android. Be among the first to play.
+            Lex Conquer is live on the App Store. Android version coming soon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <StoreBadge kind="apple" />
+            <StoreBadge kind="apple" href={APP_STORE_URL} />
             <StoreBadge kind="google" />
           </div>
         </div>

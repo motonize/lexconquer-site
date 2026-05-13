@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · Lex Conquer",
   },
   description:
-    "A multiplayer word-territory game. Spell on a grid to claim tiles, fortify bases, and outlast up to five opponents. Coming 2026 to iOS and Android.",
+    "A multiplayer word-territory game. Spell on a grid to claim tiles, fortify bases, and outlast up to five opponents. Available now on the App Store. Android coming soon.",
   openGraph: {
     title: "Lex Conquer — Spell. Claim. Conquer.",
     description:
