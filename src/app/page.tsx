@@ -65,8 +65,33 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="bg-glow">
-        <div className="max-w-4xl mx-auto px-6 sm:px-10 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center">
+      <section className="bg-glow relative overflow-hidden">
+        {/* Mascots — Mr Lex left, Ms Lex right, saluting (lg+ only) */}
+        <div className="hidden lg:block absolute inset-x-0 bottom-0 pointer-events-none">
+          <div className="max-w-7xl mx-auto px-2 xl:px-6 flex items-end justify-between">
+            <Image
+              src="/mascot/mr-lex-salute.png"
+              alt=""
+              aria-hidden="true"
+              width={500}
+              height={750}
+              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              priority
+            />
+            <Image
+              src="/mascot/ms-lex-salute.png"
+              alt=""
+              aria-hidden="true"
+              width={500}
+              height={750}
+              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Hero content (centered, on top) */}
+        <div className="max-w-4xl mx-auto px-6 sm:px-10 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center relative z-10">
           <div className="inline-block mb-8">
             <Image
               src="/lex-conquer-icon.png"
@@ -184,8 +209,30 @@ export default function Home() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="border-t border-[var(--border)] bg-glow">
-        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-20 text-center">
+      <section className="border-t border-[var(--border)] bg-glow relative overflow-hidden">
+        {/* Mascots — sword-fighting stance, ready for battle (lg+ only) */}
+        <div className="hidden lg:block absolute inset-x-0 bottom-0 pointer-events-none">
+          <div className="max-w-7xl mx-auto px-2 xl:px-6 flex items-end justify-between">
+            <Image
+              src="/mascot/mr-lex-sword-fighting.png"
+              alt=""
+              aria-hidden="true"
+              width={500}
+              height={750}
+              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+            />
+            <Image
+              src="/mascot/ms-lex-sword-fighting.png"
+              alt=""
+              aria-hidden="true"
+              width={500}
+              height={750}
+              className="w-[200px] xl:w-[260px] h-auto select-none drop-shadow-2xl"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 sm:px-10 py-20 text-center relative z-10">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold mb-4">
             Ready to conquer?
           </h2>
