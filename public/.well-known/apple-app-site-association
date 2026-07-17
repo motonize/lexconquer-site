@@ -3,7 +3,10 @@
     "apps": [],
     "details": [
       {
-        "appIDs": ["WD7GNZMS23.com.motonize.lexconquer"],
+        "appIDs": [
+          "3U882H7554.com.motonize.lexconquer",
+          "WD7GNZMS23.com.motonize.lexconquer"
+        ],
         "components": [
           {
             "/": "/join",
