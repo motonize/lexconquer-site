@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["WD7GNZMS23.com.motonize.lexconquer"],
+        "components": [
+          {
+            "/": "/join",
+            "comment": "Game invite links - opens the app's join flow"
+          }
+        ]
+      }
+    ]
+  }
+}
